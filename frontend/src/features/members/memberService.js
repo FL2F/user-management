@@ -2,7 +2,7 @@ import axios from "axios";
 
 // const API_URL = "http://localhost:8080/api/members/";
 const API_URL =
-  "https://user-management-backend-3yvuhaorjq-uc.a.run.app/api/members/";
+  "https://user-management-backend-hljp.onrender.com/api/members/";
 
 // GET all Members for a specific group
 const getAll = async (token) => {

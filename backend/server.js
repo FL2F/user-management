@@ -13,6 +13,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
+      "https://storied-nasturtium-f5b242.netlify.app/",
       "https://user-management.fl2f.ca",
       "https://user-management-frontend-3yvuhaorjq-uc.a.run.app",
     ],

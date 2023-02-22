@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import axios from "axios";
 
 // const API_URL = "http://localhost:8080/api/";
-const API_URL = "https://user-management-backend-3yvuhaorjq-uc.a.run.app/api/";
+const API_URL = "https://user-management-backend-hljp.onrender.com/api/";
 
 // axios.defaults.withCredentials = true;
 
