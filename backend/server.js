@@ -13,8 +13,8 @@ app.use(
   cors({
     origin: [
       "https://storied-nasturtium-f5b242.netlify.app/",
-      "https://user-management.fl2f.ca",
-      "http://localhost:3000",
+      // "https://user-management.fl2f.ca",
+      // "http://localhost:3000",
     ],
     credentials: true,
   })
