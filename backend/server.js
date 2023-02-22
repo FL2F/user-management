@@ -9,16 +9,17 @@ app.use(express.json());
 // urlencoded middleware
 app.use(express.urlencoded({ extended: false }));
 
-app.use(
-  cors({
-    origin: [
-      "https://storied-nasturtium-f5b242.netlify.app/",
-      // "https://user-management.fl2f.ca",
-      // "http://localhost:3000",
-    ],
-    credentials: true,
-  })
-);
+app.use(cors());
+// app.use(
+//   cors({
+//     origin: [
+//       "https://storied-nasturtium-f5b242.netlify.app/",
+//       "https://user-management.fl2f.ca",
+//       "http://localhost:3000",
+//     ],
+//     credentials: true,
+//   })
+// );
 
 app.use("/api/login", require("./routes/userRoutes")); //working
 app.use("/api/members", require("./routes/memberRoutes")); //working
