@@ -5,10 +5,8 @@ import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import ErrorPage from "./pages/ErrorPage";
 import GroupSelect from "./pages/GroupSelect";
-import AlumniGroups from "./pages/AlumniGroups";
 import Header from "./components/Header";
 import DashboardForGroup from "./pages/DashboardForGroup";
-import DashboardForAlumniGroup from "./pages/DashboardForAlumniGroup";
 import Confirm from "./components/Confirm";
 import CreateMember from "./pages/CreateMember";
 import MemberEdit from "./pages/MemberEdit";
@@ -22,11 +20,6 @@ function App() {
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/" element={<GroupSelect />} />
-            <Route path="/alumni-groups" element={<AlumniGroups />} />
-            <Route
-              path="/alumni-groups/:groupID"
-              element={<DashboardForAlumniGroup />}
-            />
             <Route path="/:groupID" element={<DashboardForGroup />} />
             <Route path="/create-member" element={<CreateMember />} />
             <Route path="/:groupID/create-member" element={<CreateMember />} />

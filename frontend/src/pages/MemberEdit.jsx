@@ -223,10 +223,6 @@ const MemberEdit = () => {
     }
   };
 
-  const today = new Date().toString();
-
-  const date = today.split(" ").splice(1, 3).join(", ");
-
   if (member === undefined) {
     return (
       <section>
@@ -379,26 +375,14 @@ const MemberEdit = () => {
         )}
       </form>
       <div className="btn-group">
-        <div className="flex-between">
-          {role === "alumni" && (
-            <button
-              hidden={!hidden}
-              className="btn btn-secondary btn-add"
-              type="submit"
-              onClick={() => GeneratePDF(memberData, date)}
-            >
-              Generate Certificate
-            </button>
-          )}
+        <button
+          hidden={!hidden}
+          className="btn btn-secondary btn-add"
+          onClick={onClick}
+        >
+          Update Password
+        </button>
 
-          <button
-            hidden={!hidden}
-            className="btn btn-secondary btn-add"
-            onClick={onClick}
-          >
-            Update Password
-          </button>
-        </div>
         <button
           className="btn btn-secondary"
           hidden={hidden}

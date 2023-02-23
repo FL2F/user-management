@@ -38,12 +38,6 @@ const Header = () => {
                 Groups
               </h3>
               <h3
-                className="nav-item"
-                onClick={() => navigate("/alumni-groups")}
-              >
-                Certificates
-              </h3>
-              <h3
                 id="logout"
                 type="submit"
                 className="nav-item logout"
