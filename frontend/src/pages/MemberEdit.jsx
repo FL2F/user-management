@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import GeneratePDF from "../components/generatePDF";
 import Spinner from "../components/Spinner";
 import {
   editMember,
